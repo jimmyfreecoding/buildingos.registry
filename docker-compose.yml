@@ -2,10 +2,9 @@ services:
   registry:
     image: registry:2
     restart: always
-    ports:
-      - "8080:8080"
     environment:
-      REGISTRY_HTTP_ADDR: 0.0.0.0:8080
+      REGISTRY_HTTP_ADDR: 0.0.0.0:5000
+      ZEABUR_PORT: "5000"
       # 如果你需要简单的账号密码验证，取消下面两行的注释
       # REGISTRY_AUTH: htpasswd
       # REGISTRY_AUTH_HTPASSWD_PATH: /auth/htpasswd
