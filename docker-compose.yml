@@ -1,9 +1,0 @@
-  services:
-    registry:
-      image: registry:2
-      restart: always
-      environment:
-        REGISTRY_HTTP_ADDR: 0.0.0.0:5000
-        ZEABUR_PORT: "5000"
-      volumes:
-        - /var/lib/registry:/var/lib/registry
