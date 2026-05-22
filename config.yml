@@ -5,5 +5,5 @@ storage:
   filesystem:
     rootdirectory: /var/lib/registry
 http:
-  addr: :5000
-  secret: some-random-secret-string
+  addr: :8080
+  secret: a-long-random-secret-string-here
